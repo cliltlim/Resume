@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проекты — Юлия</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
 <header class="navbar">
-    <h1>Юлия</h1>
+    <h1>Junior QA RESUME</h1>
     <nav>
         <a href="index.html">Главная</a>
         <a href="projects.html">Проекты</a>
@@ -17,28 +18,31 @@
     </nav>
 </header>
 
-<section class="projects-page">
-    <h2>Мои проекты</h2>
-    <p>Мои учебные и личные проекты</p>
-
-    <div class="projects-grid">
-        <div class="project-card">
-            <h3>Проект 1: Решения различных заданий с курсов по тестированию ПО</h3>
-            <p>Составление тест кейсов, чек листов, работа с SQL и различными методиками тестирования</p>
-            <a href="/courses" target="_blank">Подробнее</a>
-        </div>
-        <div class="project-card">
-            <h3>Проект 2: Автоматизация тестов c Testng</h3>
-            <p>Небольшое приложение на java протестированное с Testng</p>
-            <a href="/auto-tests" target="_blank">Подробнее</a>
-        </div>
-        <div class="project-card">
-            <h3>Проект 3: Отчеты по багам</h3>
-            <p>Составление подробных отчетов и репортов для команды разработчиков в jira.</p>
-            <a href="https://juliarusakovamed.atlassian.net/jira/software/c/projects/PS/list?jql=project%20%3D%20%22PS%22%20ORDER%20BY%20created%20DESC" target="_blank">Подробнее</a>
-        </div>
+<div class="max-w-4xl mx-auto py-8">
+    <h1 class="bg-gradient-to-b from-rose-50 to-rose-100 text-gray p-4  rounded-lg">Мои проекты</h1>
+    <div class="grid grid-cols-5 grid-rows-5 gap-4 m-4">
+        <a href="/courses" class="col-span-3 row-span-4 bg-white">
+            <div class="h-full shadow-md hover:shadow-xl p-4">
+                <h3 class="text-gray-1000 text-center p-4">Решения заданий с курсов по тестированию ПО</h3>
+                <p class="text-gray-500 text-left">Составление тест кейсов, чек листов, работа с SQL и различными методиками тестирования</p>
+            </div>
+        </a>
+        <a href="https://github.com/cliltlim/Testng" target="_blank" class="col-span-2 row-span-2 col-start-4 bg-white">
+            <div class="shadow-md hover:shadow-xl p-4 h-full">
+                <h3 class="text-gray-1000 text-center p-4">Автоматизация тестов c Testng</h3>
+                <p class="text-gray-500 text-left">Небольшое приложение на java протестированное с Testng</p>
+            </div>
+        </a>
+        <a href="https://juliarusakovamed.atlassian.net/jira/software/c/projects/PS/list?jql=project%20%3D%20%22PS%22%20ORDER%20BY%20created%20DESC" target="_blank" class="col-span-2 row-span-2 col-start-4 row-start-3 shadow-md hover:shadow-xl bg-white">
+            <div class="h-full shadow-lg text-center p-4">
+                <h3 class="text-gray-1000 text-cente">Отчеты по багам</h3>
+                <p class="text-gray-500 text-left">
+                    Составление подробных отчетов и репортов для команды разработчиков в jira.
+                </p>
+            </div>
+        </a>
     </div>
-</section>
+</div>
 
 
 </body>
